@@ -10,3 +10,8 @@ function getClassNames (parentElement) {
 }
 getClassNames(document.body);
 console.log(arrayOfClass);
+let classes = [];
+for (const item of arrayOfClass) {
+    classes.push(item.split(' '));
+}
+console.log(classes.flat(Infinity));
